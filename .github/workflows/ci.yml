@@ -36,7 +36,7 @@ jobs:
     #     username: ${{ secrets.DOCKER_USERNAME }}
     #     password: ${{ secrets.DOCKER_PASSWORD }}
 
-    
+
     - name: Build and Push Docker Image
       uses: majid021/docker-image-build-push-action@v1.0
       with:
@@ -48,4 +48,4 @@ jobs:
         docker_file: '.'
 
     - name: Get pre step result output image_pull_url
-      run: echo "The time was ${{ steps.buildAndPushImage.outputs.image_pull_url
+      run: echo "The time was ${{ steps.buildAndPushImage.outputs.image_pull_url }}"
