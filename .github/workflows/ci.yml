@@ -38,7 +38,7 @@ jobs:
 
 
     - name: Build and Push Docker Image
-      uses: majid021/docker-image-build-push-action@v1.0
+      uses: mr-smithers-excellent/docker-build-push@v4
       with:
         image: majid021/myfirstghaproject
         registry: docker.io
