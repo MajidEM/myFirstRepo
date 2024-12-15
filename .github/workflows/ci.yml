@@ -38,13 +38,14 @@ jobs:
 
 
     - name: Build and Push Docker Image
-      uses: mr-smithers-excellent/docker-build-push@v4
+      uses: mr-smithers-excellent/docker-build-push@v6
       with:
-        image: majid021/myfirstghaproject
+        image: myfirstghaproject/firstimage
         registry: docker.io
         username: ${{ secrets.DOCKER_USER_NAME }}
         password: ${{ secrets.DOCKER_PERSONAL_ACCESS_TOKEN }}
         image_version: 'v1.0'
+        context: . 
 
     - name: Get pre step result output image_pull_url
       run: echo "The time was ${{ steps.buildAndPushImage.outputs.image_pull_url }}"
