@@ -49,7 +49,7 @@ jobs:
       uses: docker/build-push-action@v6
       with:
           push: true
-          tags: myfirstghaproject/firstimage:latest
+          tags: majid021/myfirstghaproject:latest
 
 
     # - name: Build and Push Docker Image
