@@ -40,7 +40,7 @@ jobs:
     - name: Build and Push Docker Image
       uses: mr-smithers-excellent/docker-build-push@v6
       with:
-        image: myfirstghaproject/firstimage
+        image: majid021/myfirstghaproject/firstimage
         registry: docker.io
         username: ${{ secrets.DOCKER_USER_NAME }}
         password: ${{ secrets.DOCKER_PERSONAL_ACCESS_TOKEN }}
